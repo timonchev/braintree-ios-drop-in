@@ -294,12 +294,7 @@
         [self.requiredFields addObject:self.cardholderNameField];
     }
     [self.requiredFields addObject:self.expirationDateField];
-    if ([challenges containsObject:@"cvv"]) {
-        [self.requiredFields addObject:self.securityCodeField];
-    }
-    if ([challenges containsObject:@"postal_code"]) {
-        [self.requiredFields addObject:self.postalCodeField];
-    }
+    [self.requiredFields addObject:self.securityCodeField];
 }
 
 #pragma mark - card.io
