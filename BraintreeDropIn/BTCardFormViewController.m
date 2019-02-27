@@ -288,7 +288,6 @@
 }
 
 - (void)updateRequiredFields {
-    NSArray <NSString *> *challenges = [self.configuration.json[@"challenges"] asStringArray];
     self.requiredFields = [NSMutableArray arrayWithObject:self.cardNumberField];
     if (self.dropInRequest.cardholderNameSetting != BTFormFieldDisabled) {
         [self.requiredFields addObject:self.cardholderNameField];
